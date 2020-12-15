@@ -52,7 +52,7 @@ namespace JogoDaVelha
                     cor = Brushes.Brown;
                     break;
                 case 8:
-                    cor = Brushes.Magenta;
+                    cor = Brushes.DarkOliveGreen;
                     break;
                 default:
                     cor = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
