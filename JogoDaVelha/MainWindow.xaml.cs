@@ -43,7 +43,7 @@ namespace JogoDaVelha
                     cor = Brushes.Yellow;
                     break;
                 case 5:
-                    cor = Brushes.White;
+                    cor = Brushes.Aqua;
                     break;
                 case 6:
                     cor = Brushes.Black;
@@ -72,7 +72,12 @@ namespace JogoDaVelha
         }
         private void Button_Click_0(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[0].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn0 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn0.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -85,14 +90,18 @@ namespace JogoDaVelha
 
             var buttonCor = 0;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn0 = sender as Button;
             btn0.Background = btn0.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[1].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn1 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn1.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -100,18 +109,24 @@ namespace JogoDaVelha
             if (VerificaBotóesAtivos())
             {
                 CleanCor(false);
+                botoesAbertos++;
             }
+
 
             var buttonCor = 1;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn1 = sender as Button;
             btn1.Background = btn1.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[2].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn2 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn2.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -119,18 +134,24 @@ namespace JogoDaVelha
             if (VerificaBotóesAtivos())
             {
                 CleanCor(false);
+                botoesAbertos++;
             }
+
 
             var buttonCor = 2;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn2 = sender as Button;
             btn2.Background = btn2.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[3].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn3 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn3.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -138,18 +159,24 @@ namespace JogoDaVelha
             if (VerificaBotóesAtivos())
             {
                 CleanCor(false);
+                botoesAbertos++;
             }
+
 
             var buttonCor = 3;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn3 = sender as Button;
             btn3.Background = btn3.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[5].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn5 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn5.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -157,18 +184,24 @@ namespace JogoDaVelha
             if (VerificaBotóesAtivos())
             {
                 CleanCor(false);
+                botoesAbertos++;
             }
+
 
             var buttonCor = 5;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn5 = sender as Button;
             btn5.Background = btn5.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[4].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn4 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn4.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -176,18 +209,24 @@ namespace JogoDaVelha
             if (VerificaBotóesAtivos())
             {
                 CleanCor(false);
+                botoesAbertos++;
             }
+
 
             var buttonCor = 4;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn4 = sender as Button;
             btn4.Background = btn4.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[6].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn6 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn6.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -195,18 +234,24 @@ namespace JogoDaVelha
             if (VerificaBotóesAtivos())
             {
                 CleanCor(false);
+                botoesAbertos++;
             }
+
 
             var buttonCor = 6;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn6 = sender as Button;
             btn6.Background = btn6.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
 
         private void Button_Click_7(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[7].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn7 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn7.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -214,18 +259,24 @@ namespace JogoDaVelha
             if (VerificaBotóesAtivos())
             {
                 CleanCor(false);
+                botoesAbertos++;
             }
+
 
             var buttonCor = 7;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn7 = sender as Button;
             btn7.Background = btn7.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
 
         private void Button_Click_8(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[8].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn8 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn8.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -233,18 +284,24 @@ namespace JogoDaVelha
             if (VerificaBotóesAtivos())
             {
                 CleanCor(false);
+                botoesAbertos++;
             }
+
 
             var buttonCor = 8;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn8 = sender as Button;
             btn8.Background = btn8.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
 
         private void Button_Click_9(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[9].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn9 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn9.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -252,18 +309,24 @@ namespace JogoDaVelha
             if (VerificaBotóesAtivos())
             {
                 CleanCor(false);
+                botoesAbertos++;
             }
+
 
             var buttonCor = 9;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn9 = sender as Button;
             btn9.Background = btn9.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
 
         private void Button_Click_10(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[10].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn10 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn10.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -271,18 +334,24 @@ namespace JogoDaVelha
             if (VerificaBotóesAtivos())
             {
                 CleanCor(false);
+                botoesAbertos++;
             }
+
 
             var buttonCor = 10;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn10 = sender as Button;
             btn10.Background = btn10.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
 
         private void Button_Click_11(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[11].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn11 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn11.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -290,18 +359,24 @@ namespace JogoDaVelha
             if (VerificaBotóesAtivos())
             {
                 CleanCor(false);
+                botoesAbertos++;
             }
+
 
             var buttonCor = 11;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn11 = sender as Button;
             btn11.Background = btn11.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
 
         private void Button_Click_12(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[12].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn12 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn12.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -309,18 +384,24 @@ namespace JogoDaVelha
             if (VerificaBotóesAtivos())
             {
                 CleanCor(false);
+                botoesAbertos++;
             }
+
 
             var buttonCor = 12;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn12 = sender as Button;
             btn12.Background = btn12.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
 
         private void Button_Click_13(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[13].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn13 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn13.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -328,18 +409,24 @@ namespace JogoDaVelha
             if (VerificaBotóesAtivos())
             {
                 CleanCor(false);
+                botoesAbertos++;
             }
+
 
             var buttonCor = 13;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn13 = sender as Button;
             btn13.Background = btn13.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
 
         private void Button_Click_14(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[14].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn14 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn14.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -347,18 +434,23 @@ namespace JogoDaVelha
             if (VerificaBotóesAtivos())
             {
                 CleanCor(false);
+                botoesAbertos++;
             }
 
             var buttonCor = 14;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn14= sender as Button;
             btn14.Background = btn14.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
 
         private void Button_Click_15(object sender, RoutedEventArgs e)
         {
-            if (VetorCores[15].GetAtivo())
+            var scbCinza = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+            Button btn15 = sender as Button;
+            var strscbCinza = Convert.ToString(scbCinza);
+            var strColorBuntton = Convert.ToString(btn15.Background);
+
+            if (strscbCinza != strColorBuntton)
             {
                 return;
             }
@@ -366,11 +458,12 @@ namespace JogoDaVelha
             if (VerificaBotóesAtivos())
             {
                 CleanCor(false);
+                botoesAbertos++;
             }
+
 
             var buttonCor = 15;
             SolidColorBrush cor = pegaCor(VetorCores[buttonCor].GetCor());
-            Button btn15 = sender as Button;
             btn15.Background = btn15.Background == cor ? (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD")) : cor;
             testeTime(buttonCor);
         }
